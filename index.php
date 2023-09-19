@@ -16,8 +16,10 @@
         <form action="conexion.php" method="post">
             <input type="text" name="nom" placeholder="Nombre">
             <input type="text" name="ape" placeholder="Apellido">
-            <button type="submit" name="enviar">Enviar</button>
-            
+            <input type="text" placeholder="telefono" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+
+            <button type="submit" name="enviar">Sign up</button>
+            <button type="submit" name="ingreso">Ingresar</button>
         </form>
         </div>
 
