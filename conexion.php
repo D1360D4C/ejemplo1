@@ -13,7 +13,7 @@ include_once("cn.php");
 //or die(mysql_error($mysqli));          
 
 bifur($conexion);
-//mostrar();
+
 
 function bifur($conexion){
     if(isset($_POST['enviar'])){
