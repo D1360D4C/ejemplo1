@@ -1,4 +1,5 @@
-<?php include('conexion.php'); ?>
+<?php include('conexion.php'); 
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,7 +18,6 @@
             <input type="text" name="nom" placeholder="Nombre">
             <input type="text" name="ape" placeholder="Apellido">
             <input type="text" placeholder="telefono" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-
             <button type="submit" name="enviar">Sign up</button>
             <button type="submit" name="ingreso">Ingresar</button>
         </form>

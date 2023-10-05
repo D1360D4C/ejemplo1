@@ -13,14 +13,12 @@ include_once("cn.php");
 //or die(mysql_error($mysqli));          
 
 bifur($conexion);
-mostrar();
+//mostrar();
 
 function bifur($conexion){
     if(isset($_POST['enviar'])){
         insertar($conexion);
     }
-
-
 }
 
 function insertar($conexio){
@@ -31,9 +29,10 @@ function insertar($conexio){
 
     mysqli_query($conexio,$consulta);
     mysqli_close($conexio);
-    
     echo "<p>Hola, $nombre. ¡Bienvenido!</p>";
+    mostrar();
 }
+
 function mostrar(){
     $conex = new mysqli('localhost','root','','prueba');
     $sql = "SELECT nombre, apellido FROM usuario";

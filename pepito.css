@@ -18,7 +18,7 @@
 body {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(10,50px);
+    grid-template-rows: repeat(14,50px);
     background: linear-gradient(90deg,
      #05583a,
      #6fc9d4,
@@ -42,7 +42,7 @@ body {
     background-color: rgb(130, 221, 243);
     
     grid-column: 5/8;
-    grid-row: 2/10;
+    grid-row: 2/12;
     border-radius: 10px;
 
     
