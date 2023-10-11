@@ -28,7 +28,16 @@
             <input type="text" name="nombre1" placeholder="Nombre">
             <input type="text" name="apellido" placeholder="Apellido">
             <button type="submit" name="borrar">Borrar</button>
+        </form>
+        </div>
 
+        <div class= "modificar">
+            <form action="conexion.php" method="post">
+            <input type="text" name="nombre_actu" placeholder="Nombre actual">
+            <input type="text" name="ape_actu" placeholder="Apellido actual">
+            <input type="text" name="nombre_nuevo" placeholder="Nombre">
+            <input type="text" name="apellido_nuevo" placeholder="Apellido">
+            <button type="submit" name="mod">Modificar</button>
         </form>
         </div>
 
