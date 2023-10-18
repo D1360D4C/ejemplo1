@@ -14,7 +14,7 @@
     <div class="formulario">
         <div class= "enviar">
 
-        <form action="conexion.php" method="post">
+        <form action="conexion.php" method="post" id="env">
             <input type="text" name="nom" placeholder="Nombre">
             <input type="text" name="ape" placeholder="Apellido">
             <input type="text" placeholder="telefono" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '');">

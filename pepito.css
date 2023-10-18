@@ -20,61 +20,61 @@ body {
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(10,10%);
     background: linear-gradient(90deg,
-     #05583a,
-     #6fc9d4,
-     #becdee,
-     #6dd6c6,
-     #b9dfdf,
-     #c45c16,
-     #aac5cf,
-     #84adb3,
-     #b9dddf);
+     #16c42d,
+     #0a0a09,
+     #240ee7);
      background-size: 200% 200%;
      animation: gradientAnimation 10s ease-in-out infinite;
 }
 
-
-
-
 .formulario{
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10,10%);
     justify-content: center;
     background-color: rgb(130, 221, 243);
     
     grid-column: 5/8;
     grid-row: 2/10;
     border-radius: 10px;
-
-    
 }
 
 .formulario .enviar{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8%;
-    margin-left: 12%;
-
+    display: flex; /* Utilizar flexbox para centrar el contenido */
+  flex-direction: column; /* Apilar elementos verticalmente */
+  align-items: center; /* Centrar horizontalmente los elementos */
+  justify-content: center; 
+   
+    grid-column: 2/10;
+    grid-row: 2/6;
+}
+.formulario .enviar input{
+    border-radius: 5px;
+   width: 200px;
+   height: 35px;
+   margin-top: 4px;
 }
 
 .formulario .borrar{
-    margin-top: 18px;
-    margin-left: 12%;
-
+    display: flex; /* Utilizar flexbox para centrar el contenido */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    justify-content: center; 
+    margin-top: 8%;
+   
+    grid-column: 2/10;
+    grid-row: 7/10;
 }
 .formulario .borrar button:hover{
-    background-color: rgb(147, 177, 189);
-}
-
-.formulario .enviar input{
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+    background-color: rgb(226, 17, 17);
+    color: #ffffff;
 }
 
 .formulario .borrar input{
     border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+   width: 200px;
+   height: 35px;
+   margin-top: 4px;
 }
 
 .formulario .enviar button{
